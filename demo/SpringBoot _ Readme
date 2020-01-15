@@ -1,0 +1,16 @@
+Spring boot is a module of spring framework which is used to create stand-alone, production-grade Spring based Applications with minimum programmer’s efforts.
+
+
+https://start.spring.io use this URL for Spring Initializer.
+Add required dependencies. Project will be created. 
+In pom.xml lookup for parent directory, which looks like this.
+<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+</parent>
+Create a controller with a @RestController annotation. Create a method with @RequestMapping which maps the http request to handler methods.
+Run the spring boot application.
+In url type localhost:8082, port no. can be changed in application.properties file by simply writing server.port=8082.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
